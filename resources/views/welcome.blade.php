@@ -82,6 +82,10 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
+{{--                    @php--}}
+{{--                        $p = \App\SBlog\Core\BlogApp::get_instance()->getProperty('admin_email');--}}
+{{--                        dd($p);--}}
+{{--                    @endphp--}}
                 </div>
 
                 <div class="links">
