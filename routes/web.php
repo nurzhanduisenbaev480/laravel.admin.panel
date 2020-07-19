@@ -21,3 +21,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/** Admin side */
+Route::group(['middleware' => ['status', 'auth']], function (){
+    $group_data = [
+        'namespace' => 'Blog\Admin',
+        'prefix'    => 'admin'
+    ];
+    Route::group($group_data, function (){
+        Route::resource('index', 'MainController')
+            ->names('blog.admin.index');
+    });
+});

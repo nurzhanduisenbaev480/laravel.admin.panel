@@ -65,7 +65,7 @@
             }
             #menu-links a{
                 text-decoration: none;
-                color: #0b3e6f;
+                color: #ffffff;
                 padding: 5px;
                 margin-right: 40px;
                 border: 1px solid darkblue;
@@ -89,7 +89,7 @@
                             <strong><a href="{{url('/')}}" >Главная</a></strong>
                         @endif
                         <strong>
-                            <a  href="{{route('/logout')}}" class="dropdown-item"
+                            <a  href="{{route('logout')}}" class="dropdown-item"
                                 onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                                 Выйти
                             </a>
