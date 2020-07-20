@@ -34,3 +34,5 @@ Route::group(['middleware' => ['status', 'auth']], function (){
             ->names('blog.admin.index');
     });
 });
+/** User side */
+Route::get('user/index', 'Blog\User\MainController@index');

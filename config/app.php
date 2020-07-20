@@ -175,6 +175,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+
+        /** for this project */
+//        Torann\LaravelMetaTags\MetaTagsServiceProvider::class
+        Fomvasss\LaravelMetaTags\ServiceProvider::class
+
     ],
 
     /*
@@ -227,6 +232,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+
+//        'MetaTag' => Torann\LaravelMetaTags\Facades\MetaTag::class
+        'MetaTag' => Fomvasss\LaravelMetaTags\Facade::class
     ],
 
 ];
