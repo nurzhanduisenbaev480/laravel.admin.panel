@@ -62,5 +62,9 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            @include('blog.admin.main.include.orders')
+            @include('blog.admin.main.include.recently')
+        </div>
     </section>
 @endsection
