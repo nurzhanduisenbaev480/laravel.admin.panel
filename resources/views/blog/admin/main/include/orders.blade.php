@@ -27,7 +27,7 @@
                             <td><a href="">{{$order->id}}</a></td>
                             <td><a href="">{{ucfirst($order->name)}}</a></td>
                             <td><span class="label label-success">
-                            @if($order->status == 0)Новый@endif
+                                    @if($order->status == 0)Новый@endif
                                     @if($order->status == 1)Завершен@endif
                                     @if($order->status == 2) <b style="color: red;">Удален</b>@endif
                         </span></td>
@@ -44,7 +44,7 @@
 
         {{-- box-footer --}}
         <div class="box-footer clearfix">
-            <a href="" class="btn btn-sm btn-info btn-flat pull-left">Все заказы</a>
+            <a href="{{route('blog/admin.orders.index')}}" class="btn btn-sm btn-info btn-flat pull-left">Все заказы</a>
         </div>
     </div>
 

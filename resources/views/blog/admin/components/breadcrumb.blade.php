@@ -8,7 +8,7 @@
     </li>
     @if(isset($order))
         <li>
-{{--            <a href="{{route('blog.admin.orders.index')}}"><i></i>{{$order}}</a>--}}
+            <a href="{{route('blog/admin.orders.index')}}"><i></i>{{$order}}</a>
         </li>
     @endif
     @if(isset($category))
