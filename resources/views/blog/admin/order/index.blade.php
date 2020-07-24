@@ -54,7 +54,7 @@
                                     <td>{{$order->updated_at}}</td>
                                     <td>
                                         <a href="{{route('blog/admin.orders.edit', $order->id)}}"><i class="fa fa-fw fa-pencil"></i> Редактировать</a>
-                                        <a href="{{route('blog.admin.orders.forcedestroy', $order->id)}}" style="color: red;"><i class="fa fa-fw fa-close deletebd" style="color: red;"></i> Удалить</a>
+                                        <a href="{{route('blog.admin.orders.forcedestroy', $order->id)}}" style="color: red;"><i class="fa fa-fw fa-close deletebd" style="color: red;"></i></a>
                                     </td>
                                 </tr>
                                 @empty

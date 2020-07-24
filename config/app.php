@@ -178,7 +178,8 @@ return [
 
         /** for this project */
 //        Torann\LaravelMetaTags\MetaTagsServiceProvider::class
-        Fomvasss\LaravelMetaTags\ServiceProvider::class
+        Fomvasss\LaravelMetaTags\ServiceProvider::class,
+        Lavary\Menu\ServiceProvider::class,
 
     ],
 
@@ -234,7 +235,8 @@ return [
 
 
 //        'MetaTag' => Torann\LaravelMetaTags\Facades\MetaTag::class
-        'MetaTag' => Fomvasss\LaravelMetaTags\Facade::class
+        'MetaTag' => Fomvasss\LaravelMetaTags\Facade::class,
+        'Menu'    => Lavary\Menu\Facade::class
     ],
 
 ];
